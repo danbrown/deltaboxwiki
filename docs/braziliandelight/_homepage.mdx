@@ -1,58 +1,59 @@
-# EMI (local example mod)
-EMI is a featureful and accessible item and recipe viewer for Minecraft.
+<p align="center">
+  <img src="https://media.forgecdn.net/attachments/956/979/brazilian-delight.png"
+  alt="Brazilian Delight Logo"
+   />
+</p>
 
-![EMI Interface](https://user-images.githubusercontent.com/14813658/224562247-1588064e-39ef-475a-9108-d7a357af6939.png)
+# About Brazilian Delight
+**Brazilian Delight** is an addon for the [Farmer's Delight](https://modrinth.com/mod/farmers-delight) mod. It adds recipes, crops and features related to the brazilian culture!
 
-![Recipe Tree](https://user-images.githubusercontent.com/14813658/224562258-1a5ee67a-fd7f-489f-9eed-ae67c184ddac.png)
+**[Brazil](https://en.wikipedia.org/wiki/Brazil)** is a tropical country with a rich and diverse culture, and this mod aims to bring some of that to the game. There are many things to explore and discover!
+<br/>
 
-## Developers
-To add EMI to your project as a dependency you need to add the following to your `build.gradle`:
-```gradle
-repositories {
-	maven {
-		name = "TerraformersMC"
-		url = "https://maven.terraformersmc.com/"
-	}
-}
-```
 
-How EMI gets added to your dependencies varies based on modloader and setup.
-The Gradle property `emi_version` should be something like `1.0.0+1.19.4` with EMI's version and Minecraft's version.
-Here are common dependency setups for different loaders and build systems.
+# Features
 
-```gradle
-dependencies {
-	// Fabric
-	modCompileOnly "dev.emi:emi-fabric:${emi_version}:api"
-	modLocalRuntime "dev.emi:emi-fabric:${emi_version}"
+- [Wild Crops](https://moddedmc.wiki/en/project/braziliandelight/docs/wild_crops)
+- [Trees](https://moddedmc.wiki/en/project/braziliandelight/docs/trees)
+- [Crops](https://moddedmc.wiki/en/project/braziliandelight/docs/crops)
+- [Blocks](https://moddedmc.wiki/en/project/braziliandelight/docs/blocks)
+- [Recipes](https://moddedmc.wiki/en/project/braziliandelight/docs/recipes)
+- [Placeable Foods](https://moddedmc.wiki/en/project/braziliandelight/docs/placeable_foods)
+- [Tutorials](https://moddedmc.wiki/en/project/braziliandelight/docs/tutorials)
 
-	// Forge (see below block as well if you use Forge Gradle)
-	compileOnly fg.deobf("dev.emi:emi-forge:${emi_version}:api")
-	runtimeOnly fg.deobf("dev.emi:emi-forge:${emi_version}") 
+<img src="https://media.forgecdn.net/attachments/956/984/java_2024-08-30-21-38-38-2x.jpg"/>
 
-	// NeoForge
-	compileOnly "dev.emi:emi-neoforge:${emi_version}:api"
-	runtimeOnly "dev.emi:emi-neoforge:${emi_version}" 
+# Installation
 
-	// Architectury
-	modCompileOnly "dev.emi:emi-xplat-intermediary:${emi_version}:api"
+Brazilian Delight requires a few dependency mods to work properly, also keep in mind that it needs to be all in the same Minecraft version and modloader. Here's how to install them:
 
-	// MultiLoader Template/VanillaGradle
-	compileOnly "dev.emi:emi-xplat-mojmap:${emi_version}:api"
-}
-```
+1. Download and install the [Farmer's Delight](https://modrinth.com/mod/farmers-delight) mod.
+2. Download and install the [Deltabox Lib](https://modrinth.com/mod/deltaboxlib) mod.
 
-For Forge Gradle users, you will need to enable Mixin refmaps in your client sourceset. This can be done by adding 2 lines inside of your client runs, to look like below.
+If you are using Forge:
+- Download and install the [Kotlin For Forge](https://modrinth.com/mod/kotlin-for-forge) mod.
 
-```gradle
-runs {
-	client {
-		// Add these two lines
-		property 'mixin.env.remapRefMap', 'true'
-		property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+Or if you are using Fabric:
+- Download and install the [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) mod.
 
-		// The rest of the code that was already here
-		// ...
-	}
-}
-```
+Put all the downloaded mods in the `mods` folder inside your `.minecraft` directory.
+
+# Contribution
+
+If you want to contribute to the mod, you can do so by submitting a pull request. You can also submit issues if you find any bugs or have any suggestions. We are always looking for ways to improve the mod!
+- Mod Repository: [GitHub](https://github.com/danbrown/braziliandelight)
+- Issue Tracker: [GitHub](https://github.com/danbrown/deltaboxissues)
+- Wiki: [GitHub](https://github.com/danbrown/deltaboxwiki)
+
+# Credits
+[DannBrown](https://x.com/deltaboxlabs) - Mod Creator, Main Coder, Some Textures
+
+[ArBeet](https://x.com/ArBeeeet) - Main Artist
+
+[Shadomal](https://github.com/vitorsantosb) - Some Code and Ideas
+
+[Unroman](https://github.com/unroman) - Logo Design
+
+[Cebularz](https://www.curseforge.com/members/cebularz_/projects) - Item textures
+
+[Milky](https://x.com/Milk_Furr) - Item textures
