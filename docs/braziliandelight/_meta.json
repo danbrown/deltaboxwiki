@@ -1,4 +1,28 @@
 {
   "_homepage.mdx": "Home",
-  "blocks": "Blocks"
+  "wild_crops.mdx": "\uD83C\uDF3F Wild Crops",
+  "crops": {
+    "name" : "\uD83C\uDF3E Crops",
+    "icon" : null
+  },
+  "trees": {
+    "name" : "\uD83C\uDF33 Trees",
+    "icon" : null
+  },
+  "blocks": {
+    "name" : "\uD83D\uDCE6 Crates & Bags",
+    "icon" : null
+  },
+  "recipes": {
+    "name" : "\uD83D\uDCDC Recipes",
+    "icon" : null
+  },
+  "placeable_foods": {
+    "name" : "\uD83E\uDD57 Placeable Foods",
+    "icon" : null
+  },
+  "tutorials": {
+    "name" : "\uD83D\uDCDD Tutorials",
+    "icon" : null
+  }
 }
