@@ -2,6 +2,18 @@
   "projector.mdx": {
     "name": "Trees",
     "icon": null
+  },
+  "acai_tree.mdx": {
+    "name": "Acai Tree",
+    "icon": null
+  },
+  "coconut_palm_tree.mdx": {
+    "name": "Coconut Palm Tree",
+    "icon": null
+  },
+  "lemon_tree.mdx": {
+    "name": "Lemon Tree",
+    "icon": null
   }
 }
 

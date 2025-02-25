@@ -2,6 +2,9 @@
   "projector.mdx": {
     "name": "Blocks",
     "icon": null
+  },
+  "crates_N_bags": {
+    "name": "Crates & Bags",
+    "icon": null
   }
 }
-
