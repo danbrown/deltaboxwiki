@@ -2,6 +2,45 @@
   "projector.mdx": {
     "name": "Placeable Foods",
     "icon": null
+  },
+  "carrot_cake": {
+    "name": "Carrot Cake",
+    "icon": null
+  },
+  "carrot_cake_with_chocolate": {
+    "name": "Carrot Cake with Chocolate",
+    "icon": null
+  },
+  "chicken_pot_pie": {
+    "name": "Chicken Pot Pie",
+    "icon": null
+  },
+  "feijoada_pot": {
+    "name": "Feijoada Pot",
+    "icon": null
+  },
+  "fish_moqueca_pot": {
+    "name": "Fish Moqueca Pot",
+    "icon": null
+  },
+  "green_soup_pot": {
+    "name": "Green Soup Pot",
+    "icon": null
+  },
+  "minas_cheese": {
+    "name": "Minas Cheese",
+    "icon": null
+  },
+  "pudding": {
+    "name": "Pudding",
+    "icon": null
+  },
+  "stroganoff_pot": {
+    "name": "Stroganoff Pot",
+    "icon": null
+  },
+  "sweet_love_apple_tray": {
+    "name": "Sweet Love Apple Tray",
+    "icon": null
   }
 }
-
