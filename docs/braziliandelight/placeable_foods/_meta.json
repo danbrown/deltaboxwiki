@@ -3,43 +3,43 @@
     "name": "Placeable Foods",
     "icon": null
   },
-  "carrot_cake": {
+  "carrot_cake.mdx": {
     "name": "Carrot Cake",
     "icon": null
   },
-  "carrot_cake_with_chocolate": {
+  "carrot_cake_with_chocolate.mdx": {
     "name": "Carrot Cake with Chocolate",
     "icon": null
   },
-  "chicken_pot_pie": {
+  "chicken_pot_pie.mdx": {
     "name": "Chicken Pot Pie",
     "icon": null
   },
-  "feijoada_pot": {
+  "feijoada_pot.mdx": {
     "name": "Feijoada Pot",
     "icon": null
   },
-  "fish_moqueca_pot": {
+  "fish_moqueca_pot.mdx": {
     "name": "Fish Moqueca Pot",
     "icon": null
   },
-  "green_soup_pot": {
+  "green_soup_pot.mdx": {
     "name": "Green Soup Pot",
     "icon": null
   },
-  "minas_cheese": {
+  "minas_cheese.mdx": {
     "name": "Minas Cheese",
     "icon": null
   },
-  "pudding": {
+  "pudding.mdx": {
     "name": "Pudding",
     "icon": null
   },
-  "stroganoff_pot": {
+  "stroganoff_pot.mdx": {
     "name": "Stroganoff Pot",
     "icon": null
   },
-  "sweet_love_apple_tray": {
+  "sweet_love_apple_tray.mdx": {
     "name": "Sweet Love Apple Tray",
     "icon": null
   }

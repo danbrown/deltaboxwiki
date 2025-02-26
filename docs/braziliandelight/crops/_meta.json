@@ -1,9 +1,5 @@
 {
-  "projector.mdx": {
-    "name": "Crops",
-    "icon": null
-  },
-  "collard_greens": {
+  "collard_greens.mdx": {
     "name" : "Collard Greens",
     "icon" : null
   }
