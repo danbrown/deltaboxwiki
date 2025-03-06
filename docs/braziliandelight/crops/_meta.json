@@ -1,6 +1,30 @@
 {
+  "beans.mdx": {
+    "name" : "Beans",
+    "icon" : null
+  },
+  "cassava.mdx": {
+    "name" : "Cassava",
+    "icon" : null
+  },
+  "coffee.mdx": {
+    "name" : "Coffee",
+    "icon" : null
+  },
   "collard_greens.mdx": {
     "name" : "Collard Greens",
+    "icon" : null
+  },
+  "corn.mdx": {
+    "name" : "Corn",
+    "icon" : null
+  },
+  "garlic.mdx": {
+    "name" : "Garlic",
+    "icon" : null
+  },
+  "guarana.mdx": {
+    "name" : "Guaraná",
     "icon" : null
   }
 }
