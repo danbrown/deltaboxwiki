@@ -1,6 +1,6 @@
 {
-  "projector.mdx": {
-    "name": "Tutorials",
+  "coconut_farm.mdx": {
+    "name": "Coconut Farm",
     "icon": null
   },
   "heavy_cream.mdx": {
@@ -9,10 +9,6 @@
   },
   "minas_cheese.mdx": {
     "name": "Minas Cheese",
-    "icon": null
-  },
-  "coconut_farm.mdx": {
-    "name": "Coconut Farm",
     "icon": null
   }
 }
