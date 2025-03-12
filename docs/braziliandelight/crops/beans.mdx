@@ -32,13 +32,33 @@ Beans can be used in multiple recipes, including:
 - **Cultural Significance:** Beans are a core component of Brazilian cuisine, often paired with rice in everyday meals.
 - **Nutritional Benefits:** High in protein and fiber, beans are a nutritious food source essential in many diets.
 
-import ImageCarousel from "./ImageCarousel";
-
 ### 📷 Images
 
-<ImageCarousel
-  images={[
-    { src: "https://github.com/danbrown/deltaboxwiki/blob/main/docs/braziliandelight/.assets/images/brazilliandelight/crops/nature/bean_nature.png?raw=true", alt: "Bean Plant" },
-    { src: "https://github.com/danbrown/deltaboxwiki/blob/main/docs/braziliandelight/.assets/images/brazilliandelight/crops/nature/wild_bean_nature.png?raw=true", alt: "Wild Beans Plant" }
-  ]}
-/>
+<div style={{ textAlign: "center", position: "relative", marginTop: "15px" }}>
+  <input type="radio" id="tab1" name="img-tab" defaultChecked style={{ display: "none" }} />
+  <input type="radio" id="tab2" name="img-tab" style={{ display: "none" }} />
+
+  <div style={{ position: "relative", maxWidth: "100%", display: "flex", justifyContent: "center" }}>
+    <div id="img1" style={{ display: "block", width: "247px", height: "134px", imageRendering: "pixelated", marginRight: "8px", border: "2px solid transparent", borderRadius: "10px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}>
+      <img src="https://github.com/danbrown/deltaboxwiki/blob/main/docs/braziliandelight/.assets/images/brazilliandelight/crops/nature/bean_nature.png?raw=true" alt="Bean Plant" style={{ width: "100%", height: "100%" }} />
+    </div>
+    <div id="img2" style={{ display: "none", width: "247px", height: "134px", imageRendering: "pixelated", marginRight: "8px", border: "2px solid transparent", borderRadius: "10px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}>
+      <img src="https://github.com/danbrown/deltaboxwiki/blob/main/docs/braziliandelight/.assets/images/brazilliandelight/crops/nature/wild_bean_nature.png?raw=true" alt="Wild Beans Plant" style={{ width: "100%", height: "100%" }} />
+    </div>
+  </div>
+
+  <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
+    <label htmlFor="tab1" style={{ width: "12px", height: "12px", backgroundColor: "white", borderRadius: "50%", margin: "0 5px", cursor: "pointer", transition: "all 0.2s ease-in-out" }}
+      onClick={() => {
+        document.getElementById("img1").style.display = "block";
+        document.getElementById("img2").style.display = "none";
+      }}
+    ></label>
+    <label htmlFor="tab2" style={{ width: "12px", height: "12px", backgroundColor: "white", borderRadius: "50%", margin: "0 5px", cursor: "pointer", transition: "all 0.2s ease-in-out" }}
+      onClick={() => {
+        document.getElementById("img1").style.display = "none";
+        document.getElementById("img2").style.display = "block";
+      }}
+    ></label>
+  </div>
+</div>

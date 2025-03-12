@@ -1,15 +1,14 @@
 {
-  "acai_tree.mdx": {
-    "name": "Acai Tree",
+  "acai.mdx": {
+    "name": "Açai Tree",
     "icon": null
   },
-  "coconut_palm_tree.mdx": {
+  "coconut.mdx": {
     "name": "Coconut Palm Tree",
     "icon": null
   },
-  "lemon_tree.mdx": {
+  "lemon.mdx": {
     "name": "Lemon Tree",
     "icon": null
   }
 }
-
