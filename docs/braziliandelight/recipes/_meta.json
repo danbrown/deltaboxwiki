@@ -38,5 +38,9 @@
   "lemon.mdx": {
     "name": "Recipes with Lemon",
     "icon": null
+  },
+  "minas_cheese.mdx": {
+    "name": "Recipes with Minas Cheese",
+    "icon": null
   }
 }
