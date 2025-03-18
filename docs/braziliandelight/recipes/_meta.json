@@ -1,6 +1,42 @@
 {
-  "projector.mdx": {
-    "name": "Recipes",
+  "acai.mdx": {
+    "name": "Recipes with Açaí",
+    "icon": null
+  },
+  "beans.mdx": {
+    "name": "Recipes with Beans",
+    "icon": null
+  },
+  "cassava.mdx": {
+    "name": "Recipes with Cassava",
+    "icon": null
+  },
+  "coconut.mdx": {
+    "name": "Recipes with Coconut",
+    "icon": null
+  },
+  "coffee.mdx": {
+    "name": "Recipes with Coffee",
+    "icon": null
+  },
+  "collard_greens.mdx": {
+    "name": "Recipes with Collard Greens",
+    "icon": null
+  },
+  "corn.mdx": {
+    "name": "Recipes with Corn",
+    "icon": null
+  },
+  "garlic.mdx": {
+    "name": "Recipes with Garlic",
+    "icon": null
+  },
+  "guarana.mdx": {
+    "name": "Recipes with Guaraná",
+    "icon": null
+  },
+  "lemon.mdx": {
+    "name": "Recipes with Lemon",
     "icon": null
   }
 }
