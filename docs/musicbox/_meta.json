@@ -1,3 +1,11 @@
 {
-  "_homepage.mdx": "Home"
+  "_homepage.mdx": "Home",
+  "features.mdx": {
+    "name" : "Features",
+    "icon" : null
+  },
+  "datapack_support.mdx": {
+    "name" : "Blocks",
+    "icon" : null
+  }
 }
