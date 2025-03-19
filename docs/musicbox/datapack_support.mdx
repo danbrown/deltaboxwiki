@@ -1,0 +1,168 @@
+---
+title: Datapack Support
+hide_meta: true
+---
+
+**Music Box** mod has support to create custom discs that will spawn in dungeons chests, drop from entities, drop from blocks, etc. You can create a datapack that adds any disc into the game, and make it spawn wherever you like! Be creative with datapacks that adds all that sassy Taylor Swift songs, or the new Linkin Park album and spread it around your Minecraft world!
+
+<Callout variant="info">
+*Note: You can publish any datapack you create with this feature in Modrinth or Curseforge, if you do so, please send me on discord as well! I would love to see it!*
+</Callout>
+
+## How to make a custom music disc that spawn in dungeons:
+
+- create a new datapack following the official wiki tutorial
+- in the data folder, create a folder named musicbox
+- inside the musicbox folder, create one named loot_modifiers
+- in loot_modifiers create a new .json file, it can have any name with lowercase and no special characters (like darude_sandstorm_disc_from_desert_pyramid.json)
+
+The file content should look like this:
+
+```json
+{
+  "type": "musicbox:add_disc_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/desert_pyramid"
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "duration": 232,
+  "name": "Darude - Sandstorm",
+  "radius": 30,
+  "url": "https://www.youtube.com/watch?v=y6120QOlsfU",
+  "variant": 28
+}
+```
+
+It contains the conditions to spawn a custom music disc loot (in the `conditions` array), note that `duration`, `name`, `radius` and `url` are the default fields of a custom music disc. 
+
+## Url Support
+The `url` field only support YouTube links at the moment.
+
+<Callout variant="info">
+This may change in the future.
+</Callout>
+
+## More Examples
+
+Here is another example of custom disc loot:
+
+This one adds a disc with a creeper texture, with a 0.01% chance of dropping from Creepers. It plays CaptainSparkles - Revenge song:
+
+```json
+{
+  "type": "musicbox:add_disc_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/creeper"
+    },
+    {
+      "chance": 0.01,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "duration": 264,
+  "name": "CaptainSparklez - Revenge",
+  "radius": 30,
+  "url": "https://www.youtube.com/watch?v=cPJUBQd-PNM",
+  "variant": 38
+}
+```
+
+This one, adds a Rick Roll disc with 30% chance of appearing in the villager weaponsmith chest:
+
+```json
+{
+  "type": "musicbox:add_disc_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_weaponsmith"
+    },
+    {
+      "chance": 0.3,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "duration": 601,
+  "name": "Rick Astley - Never Gonna Give You Up",
+  "radius": 30,
+  "url": "https://www.youtube.com/watch?v=cvh0nX08nRw",
+  "variant": 40
+}
+```
+
+And this one, adds a custom music disc playing a remix of C418 - Sweden, which has 0.0001% chance of dropping from breaking grass. 
+
+```json
+{
+  "type": "musicbox:add_disc_loot",
+  "conditions": [
+    {
+      "block": "minecraft:grass",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.0001,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "duration": 316,
+  "name": "C418 - Sweden (Caution & Crisis Remix)",
+  "radius": 30,
+  "url": "https://www.youtube.com/watch?v=3pbvmR8n27w",
+  "variant": 37
+}
+```
+
+## Variants
+The  `variant` property is the texture the custom music disc will have. It can be between 1 and 40:
+
+| Name         | ID  | Image |
+|-------------|----|------|
+| LIGHT_BLUE  | 1  | ![Light Blue](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_1.png?raw=true) |
+| CYAN        | 2  | ![Cyan](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_2.png?raw=true) |
+| BLUE        | 3  | ![Blue](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_3.png?raw=true) |
+| PURPLE      | 4  | ![Purple](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_4.png?raw=true) |
+| MAGENTA     | 5  | ![Magenta](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_5.png?raw=true) |
+| RED         | 6  | ![Red](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_6.png?raw=true) |
+| ORANGE      | 7  | ![Orange](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_7.png?raw=true) |
+| YELLOW      | 8  | ![Yellow](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_8.png?raw=true) |
+| LIME        | 9  | ![Lime](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_9.png?raw=true) |
+| GREEN       | 10 | ![Green](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_10.png?raw=true) |
+| AMETHYST    | 11 | ![Amethyst](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_11.png?raw=true) |
+| DIAMOND     | 12 | ![Diamond](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_12.png?raw=true) |
+| EMERALD     | 13 | ![Emerald](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_13.png?raw=true) |
+| GLIDED      | 14 | ![Gilded](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_14.png?raw=true) |
+| LAVA        | 15 | ![Lava](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_15.png?raw=true) |
+| COOKIE      | 16 | ![Cookie](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_16.png?raw=true) |
+| CHORUS      | 17 | ![Chorus](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_17.png?raw=true) |
+| LAPIS       | 18 | ![Lapis](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_18.png?raw=true) |
+| ENDER_EYE   | 19 | ![Ender Eye](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_19.png?raw=true) |
+| ENDER_PEARL | 20 | ![Ender Pearl](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_20.png?raw=true) |
+| MAGMA       | 21 | ![Magma](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_21.png?raw=true) |
+| OCEAN       | 22 | ![Ocean](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_22.png?raw=true) |
+| HONEY       | 23 | ![Honey](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_23.png?raw=true) |
+| PETRIFIED   | 24 | ![Petrified](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_24.png?raw=true) |
+| MAGMA_CREAM | 25 | ![Magma Cream](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_25.png?raw=true) |
+| MELON       | 26 | ![Melon](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_26.png?raw=true) |
+| NAUTILUS    | 27 | ![Nautilus](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_27.png?raw=true) |
+| DUSTY       | 28 | ![Dusty](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_28.png?raw=true) |
+| HORNED      | 29 | ![Horned](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_29.png?raw=true) |
+| SHREK       | 30 | ![Shrek](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_30.png?raw=true) |
+| GOLDEN      | 31 | ![Golden](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_31.png?raw=true) |
+| COPPER      | 32 | ![Copper](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_32.png?raw=true) |
+| OXIDIZED    | 33 | ![Oxidized](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_33.png?raw=true) |
+| PRECIPICE   | 34 | ![Precipice](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_34.png?raw=true) |
+| MOSSY       | 35 | ![Mossy](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_35.png?raw=true) |
+| DRIPSTONE   | 36 | ![Dripstone](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_36.png?raw=true) |
+| MINECRAFT   | 37 | ![Minecraft](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_37.png?raw=true) |
+| CREEPER     | 38 | ![Creeper](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_38.png?raw=true) |
+| PEWDIEPIE   | 39 | ![PewDiePie](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_39.png?raw=true) |
+| PURPUR      | 40 | ![Purpur](https://github.com/danbrown/deltaboxwiki/blob/main/docs/musicbox/.assets/item/musicbox/custom_record_40.png?raw=true) |
