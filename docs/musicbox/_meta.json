@@ -1,11 +1,5 @@
 {
   "_homepage.mdx": "Home",
-  "features.mdx": {
-    "name" : "Features",
-    "icon" : null
-  },
-  "datapack_support.mdx": {
-    "name" : "Data Pack Support",
-    "icon" : null
-  }
+  "features.mdx": "\u2754 How to use it",
+  "datapack_support.mdx": "\uD83D\uDD17 Data Pack Support"
 }
