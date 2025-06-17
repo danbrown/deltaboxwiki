@@ -11,6 +11,10 @@
     "name": "Recipes with Cassava",
     "icon": null
   },
+  "cinnamon.mdx": {
+    "name": "Recipes with Cinnamon",
+    "icon": null
+  },
   "coconut.mdx": {
     "name": "Recipes with Coconut",
     "icon": null
@@ -41,6 +45,14 @@
   },
   "minas_cheese.mdx": {
     "name": "Recipes with Minas Cheese",
+    "icon": null
+  },
+  "peanuts.mdx": {
+    "name": "Recipes with Peanuts",
+    "icon": null
+  },
+  "other_recipes.mdx": {
+    "name": "Other Recipes",
     "icon": null
   }
 }

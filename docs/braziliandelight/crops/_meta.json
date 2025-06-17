@@ -26,5 +26,9 @@
   "guarana.mdx": {
     "name" : "Guaraná",
     "icon" : null
+  },
+  "peanut.mdx": {
+    "name" : "Peanut",
+    "icon" : null
   }
 }
