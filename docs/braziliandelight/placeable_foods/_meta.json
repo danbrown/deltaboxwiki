@@ -3,6 +3,26 @@
     "name": "Placeable Foods",
     "icon": null
   },
+  "beijinho_tray.mdx": {
+    "name": "Beijinho Tray",
+    "icon": null
+  },
+  "brigadeiro_balls_tray.mdx": {
+    "name": "Brigadeiro Balls Tray",
+    "icon": null
+  },
+  "caipirinha.mdx": {
+    "name": "Caipirinha",
+    "icon": null
+  },
+  "cajuzinho_tray.mdx": {
+    "name": "Cajuzinho Tray",
+    "icon": null
+  },
+  "canjica_pot.mdx": {
+    "name": "Canjica Pot",
+    "icon": null
+  },
   "carrot_cake.mdx": {
     "name": "Carrot Cake",
     "icon": null
@@ -15,12 +35,28 @@
     "name": "Chicken Pot Pie",
     "icon": null
   },
+  "chimarrao.mdx": {
+    "name": "Chimarrão",
+    "icon": null
+  },
+  "chocolate_love_apple_tray.mdx": {
+    "name": "Chocolate Love Apple Tray",
+    "icon": null
+  },
+  "coconut_drink.mdx": {
+    "name": "Coconut Drink",
+    "icon": null
+  },
   "feijoada_pot.mdx": {
     "name": "Feijoada Pot",
     "icon": null
   },
   "fish_moqueca_pot.mdx": {
     "name": "Fish Moqueca Pot",
+    "icon": null
+  },
+  "fried_fish_with_acai.mdx": {
+    "name": "Fried Fish with Açaí",
     "icon": null
   },
   "green_soup_pot.mdx": {
@@ -33,6 +69,10 @@
   },
   "pudding.mdx": {
     "name": "Pudding",
+    "icon": null
+  },
+  "quindim.mdx": {
+    "name": "Quindim",
     "icon": null
   },
   "stroganoff_pot.mdx": {
